@@ -26,7 +26,8 @@ TARGET_BOOTLOADER_BOARD_NAME := G8342
 
 ### KERNEL
 BOARD_KERNEL_CMDLINE += androidboot.hardware=poplar_dsds
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/kernel_dtb
 
 ### PARTITIONS
 # See also /proc/partitions on the device
